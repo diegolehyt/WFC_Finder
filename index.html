@@ -27,33 +27,81 @@
     <div class="container">
         <br>
         <div class="row">
-            <div class="card col-12 col-lg-6">
+            <div class="col-1 col-lg-3"></div>
+            <div class="card col-10 col-lg-6">
                 <div class="row">
-                    <div class="card-header col-9"><img style="width: 100px; height: 60px;" src="images/Bell.png" alt=""> USOC Builder</div>
+                    <div class="card-header col-9"><img style="width: 100px; height: 60px;" src="images/Bell.png" alt=""> WFC Finder</div>
              
 
                     <!-- switch to VIRGIN button -->
                     <div class="card-header col-3">
-                        <button type="button" class="btn btn-danger btn-rounded"><a href="virgin.html" style="color: white;">VIRGIN</a></button>
+                        <button type="button" class="btn btn-primary btn-rounded"><a href="https://diegolehyt.github.io/USOC-Builder/" style="color: white;">USOC's</a></button>
 
                     </div>
                 </div>
                 
                 
                 
-
+                <!-- provinces -->
                 <div class="card-body">
-                    <h5 class="card-title">Technology</h5>
+                    <h5 class="card-title">Province</h5>
                     <div class="form-check form-check-inline">
                         <input id="FTTHindicator" class="form-check-input" type="radio" name="tec" id="inlineRadio1" value="option1" checked/>
-                        <label class="form-check-label" for="inlineRadio1">FTTH</label>
+                        <label class="form-check-label" for="inlineRadio1">ON</label>
                         </div>
 
                         <div class="form-check form-check-inline">
                         <input id="FTTNN" class="form-check-input" type="radio" name="tec" id="inlineRadio2" value="option2" />
-                        <label class="form-check-label" for="inlineRadio2">FTTN</label>
+                        <label class="form-check-label" for="inlineRadio2">QC</label>
                         </div>
                     </div>
+
+                    <!-- forms begins -->
+                    <form class="row row-cols-lg-auto g-3 align-items-center">
+
+                        <div class="col-4">
+                            <label class="visually-hidden " for="inlineFormSelectPref">Preference</label>
+                            <select class="select form-control">
+                              <option value="1">613</option>
+                              <option value="2">416</option>
+                              <option value="3">905</option>
+                              <option value="4">Four</option>
+                              <option value="5">Five</option>
+                              <option value="6">Six</option>
+                              <option value="7">Seven</option>
+                              <option value="8">Eight</option>
+                            </select>
+                        </div>
+
+                        <div class="col-8">
+                          <label class="visually-hidden" for="inlineFormInputGroupUsername">NXX-1234</label>
+                          <div class="input-group">
+                            <div class="input-group-text">#</div>
+                            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="NXX-1234" />
+                          </div>
+                        </div>
+                      
+                       
+                      
+                        <div class="col-8">
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                        <div class="col-4">
+                           
+                            <ul class="list-group list-group-horizontal">
+
+                                <li id="WFCresult" class="list-group-item list-group-item-action list-group-item-primary">WFC Result</li>
+ 
+                                
+                            </ul>
+                        </div>
+                      </form>
+
+                      <br>
+                      <!-- form end -->
+
+                      <div class="card-footer text-muted">BELL and VIRGIN orders using BCRIS</div>
+
                 </div>
             </div>
         </div>
